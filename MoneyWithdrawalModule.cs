@@ -31,7 +31,7 @@ namespace ContextOrientedProgramming
             _.Set("WithdrawalValue", keypadContext.Get<decimal>("Result"));
 
             var withdrawalContext = _.Subset("CardNumber", "WithdrawalValue");
-            withdrawalContext.Set("WithdrawalValue", (decimal)12.34);
+
             DecreaseCustomerBalance(withdrawalContext);
 
             Dispence(withdrawalContext);
